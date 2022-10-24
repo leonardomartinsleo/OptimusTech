@@ -1,0 +1,354 @@
+$main-color: #8e2424;
+$secundary-color: #667085;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+nav {
+  background-color: #F9FAFB;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #3a404e;
+  font-weight: 500;
+  /* padding: 1rem; */
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* gap: 15px;
+  font-size: 16px; */
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: grey;
+    // margin-right: 2rem;
+  }
+  gap: 2rem;
+  button {
+    background-color: $main-color;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+.login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 4rem;
+  gap: 1rem;
+}
+/*------------------Header-------------------------------*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 6rem 1rem;
+  p {
+    max-width: 50%;
+    color: #667085;
+  }
+  span {
+    color: $main-color;
+  }
+  h1 {
+    display: block;
+    font-size: 2rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+}
+.itens {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding: 0 8rem;
+}
+.item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  // justify-content: center;
+  gap: 0.5rem;
+  h1 {
+    font-size: 3rem;
+    color: $main-color;
+    font-weight: 800;
+  }
+  .subtext {
+    font-size: 0.9rem;
+    color: $secundary-color;
+  }
+  width: 100%;
+}
+.subtitle {
+  font-weight: 500;
+  color: #101828;
+}
+// -------------------vagas abertas------------------------------
+.talents {
+  padding: 8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  img {
+    margin-top: 2rem;
+    width: 80%;
+  }
+  span {
+    color: $main-color;
+    background-color: rgb(142, 36, 36, 0.05);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  p {
+    color: $secundary-color;
+  }
+  h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+}
+.functions {
+  display: flex;
+  p {
+    display: block;
+  }
+}
+// -----------------------vagas-------------------
+.trabalhe-conosco{
+  padding-top: 4rem;
+  .area-principal{
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  .vaga{
+    max-width: 50%;
+    margin: 0 auto;
+    border: 1px solid ;
+    border-color: #EAECF0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    .titulo-vaga{
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .informacoes{
+      display: flex;
+      margin-top: 1rem;
+      font-size: 90%;
+      gap:2rem;
+      color: $secundary-color;
+    }
+  }
+}
+
+// ---------------footer---------------
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem auto;
+  padding: 3rem 2rem;
+  max-width: 80%;
+  gap: 0.5rem;
+  background-color: rgb(142, 36, 36, 0.05);
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    font-weight: 500;
+    max-width: 70%;
+  }
+  p{
+    color:$main-color;
+    font-weight: 500;
+    
+  }
+  .cargo{
+    color: $secundary-color;
+  }
+}
+// -------------------------footer-----------------------
+footer{
+  background-color: #F9FAFB;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  padding: 8rem;
+  gap: 2rem;
+  h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    max-width: 70%;
+  }
+  span{
+    color: $secundary-color;
+  }
+  form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+    input{
+      outline: none;
+      border: 1px solid;
+      border-color:#D0D5DD;
+      border-radius: 0.5rem;
+      padding-left: 1rem;
+      width: 12rem;
+      height: 2.7rem;
+    }
+    button{
+      background-color: $main-color;
+      color: white;
+      padding:0.8rem 1rem;
+      font-size: .9rem;
+      border-radius: 0.5rem;
+      
+    }
+  }
+}
+
+.signUp{
+  transition: 0.3s;
+  &:hover{
+    transform: scale(1.02);
+  }
+}
+
+// -----------------Responsividade-------------------------// 
+.sideMenu {
+  display: none;
+  visibility: hidden;
+}
+
+.menu.active {
+  right: 0;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+  padding-top: 5rem;
+}
+
+.sideMenu img {
+  position: relative;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+@media screen and (max-width: 920px) {
+  .itens {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .item span {
+    max-width: 280px;
+    text-align: center;
+  }
+
+  header p {
+    max-width: 70%;
+  }
+
+  .vaga {
+    max-width: 70%;
+  }
+  
+  .vagas-abertas span.area-principal {
+    max-width: 70%;
+  }
+
+  article h2 {
+    max-width: 100%;
+    font-size: 120%;
+  }
+  .sideMenu {
+    display: initial;
+    visibility: visible;
+  }
+  .menu a {
+    margin-right: 0;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    height: 100vh;
+    background: #F9FAFB;
+    width: 15rem;
+    padding: 2rem;
+    transition: all 2s;
+  }
+
+  .menu a{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    padding-top: 2rem;
+  }
+}
