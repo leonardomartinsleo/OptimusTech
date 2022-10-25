@@ -352,3 +352,27 @@ footer{
     padding-top: 2rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .talents{
+    p{
+      // display: flex;
+      // justify-content: center;
+      // color: pink;
+      text-align: center;
+    }
+  }
+  article{
+    p{
+      text-align: center;
+    }
+  }
+  footer{
+    h2{
+      max-width: none;
+      // text-align: center;
+    }
+    span{
+      text-align: center;
+    }
+  }
+}

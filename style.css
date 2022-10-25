@@ -353,4 +353,18 @@ footer form button {
     align-items: center;
     padding-top: 2rem;
   }
+}
+@media screen and (max-width: 500px) {
+  .talents p {
+    text-align: center;
+  }
+  article p {
+    text-align: center;
+  }
+  footer h2 {
+    max-width: none;
+  }
+  footer span {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
