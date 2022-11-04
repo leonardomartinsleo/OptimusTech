@@ -6,7 +6,15 @@ menuIcon.addEventListener('click', function() {
   menu.classList.toggle('active')
   
 })
-
+const nav = document.querySelector('.nav')
+window.onscroll = function scroller(){
+  let screenHeight = document.documentElement.scrollTop
+  if(screenHeight < 100){
+    nav.className = 'nav'
+  }else{
+    nav.className = 'nav-on-scroll'
+  }
+}
 function sideMenuCloser(){
   let width = window.innerWidth
   if(width>849){
